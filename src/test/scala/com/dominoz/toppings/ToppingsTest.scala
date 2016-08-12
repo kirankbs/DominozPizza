@@ -28,7 +28,7 @@ class ToppingsTest {
   }
 
   @Test
-  def getToppingPrice: Unit ={
+  def getToppingPrice ={
     new TestToppingsTest {
       Assert.assertEquals(110,tops.price(to => to.name.equalsIgnoreCase("Chicken Sausage")))
       Assert.assertEquals(10,tops.price(to => to.name.equalsIgnoreCase("Tomato")))
@@ -37,10 +37,34 @@ class ToppingsTest {
   }
 
   @Test
-  def getToppingsTotalPrice: Unit ={
+  def getToppingsTotalPrice ={
     new TestToppingsTest {
       Assert.assertEquals(765,tops.totalToppingsPrice())
     }
+  }
+
+  @Test
+  def removeTopping() ={
+    val emptyTops= new Empty
+    val expected = emptyTops.incl(new Topping("Tomato",10))
+      .incl(new Topping("Baby Corn",10))
+      .incl(new Topping("Pineapple",20))
+      .incl(new Topping("Jalapeno",15))
+      .incl(new Topping("Chicken Salami",95))
+      .incl(new Topping("Olives",15))
+      .incl(new Topping("Capsicum",10))
+      .incl(new Topping("Paprika",30))
+      .incl(new Topping("Panner",80))
+      .incl(new Topping("Chicken Sausage",110))
+      .incl(new Topping("Barbeque Chicken",100))
+      .incl(new Topping("Spicy Chicken",90))
+      .incl(new Topping("Onion",10))
+      .incl(new Topping("Cheese",20))
+
+    Assert.assertTrue(new TestToppingsTest {}.tops.remove(tw => tw.name.equalsIgnoreCase("Smoked Chicken")).contains(new Topping("Tomato",80)))
+    Assert.assertTrue(new TestToppingsTest {}.tops.remove(tw => tw.name.equalsIgnoreCase("Smoked Chicken")).contains(new Topping("Panner",80)))
+    Assert.assertTrue(new TestToppingsTest {}.tops.remove(tw => tw.name.equalsIgnoreCase("Smoked Chicken")).contains(new Topping("Cheese",80)))
+    Assert.assertFalse(new TestToppingsTest {}.tops.remove(tw => tw.name.equalsIgnoreCase("Smoked Chicken")).contains(new Topping("Smoked Chicken",150)))
   }
 
 }

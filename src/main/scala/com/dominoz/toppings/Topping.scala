@@ -18,7 +18,8 @@ trait ToppingSet{
   def totalToppingsPriceAcc(acc: Int):Int
 
   def incl(topping: Topping): ToppingSet
-  def remove(p: Topping => Boolean, acc: ToppingSet): ToppingSet
+  def remove(p: Topping => Boolean): ToppingSet = removeAcc(p,new Empty)
+  def removeAcc(p: Topping => Boolean, acc: ToppingSet): ToppingSet
   def contains(topping: Topping): Boolean
 }
 
@@ -32,7 +33,7 @@ class Empty extends ToppingSet{
 
   override def contains(topping: Topping): Boolean = false
 
-  override def remove(p: (Topping) => Boolean, acc: ToppingSet): ToppingSet = this
+  override def removeAcc(p: (Topping) => Boolean, acc: ToppingSet): ToppingSet = acc
 }
 
 class NonEmpty(top: Topping, left: ToppingSet, right: ToppingSet) extends ToppingSet{
@@ -53,8 +54,8 @@ class NonEmpty(top: Topping, left: ToppingSet, right: ToppingSet) extends Toppin
     else if(topping.name > top.name) right.contains(topping)
     else true
 
-  override def remove(p: Topping => Boolean, acc: ToppingSet): ToppingSet =
-    right.remove(p,left.remove(p,if(p(top)) acc.incl(top) else acc))
+  override def removeAcc(p: Topping => Boolean, acc: ToppingSet): ToppingSet =
+    right.removeAcc(p,left.removeAcc(p,if(p(top)) acc else  acc.incl(top)))
 }
 
 object ToppingSet{
