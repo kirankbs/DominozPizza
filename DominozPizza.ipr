@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac"/>
+    <resourceExtensions>
+      <entry name=".+\.(properties|xml|html|dtd|tld)"/>
+      <entry name=".+\.(gif|png|jpeg|jpg)"/>
+    </resourceExtensions>
+    <wildcardResourcePatterns>
+      <entry name="!?*.java"/>
+      <entry name="!?*.groovy"/>
+    </wildcardResourcePatterns>
+    <annotationProcessing enabled="false" useClasspath="true"/>
+  </component>
+  <component name="CopyrightManager" default="">
+    <module2copyright/>
+  </component>
+  <component name="DependencyValidationManager">
+    <option name="SKIP_IMPORT_STATEMENTS" value="false"/>
+  </component>
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false"/>
+  <component name="GradleUISettings">
+    <setting name="root"/>
+  </component>
+  <component name="GradleUISettings2">
+    <setting name="root"/>
+  </component>
+  <component name="IdProvider" IDEtalkID="11DA1DB66DD62DDA1ED602B7079FE97C"/>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY"/>
+    <option name="OPTION_SCOPE" value="protected"/>
+    <option name="OPTION_HIERARCHY" value="true"/>
+    <option name="OPTION_NAVIGATOR" value="true"/>
+    <option name="OPTION_INDEX" value="true"/>
+    <option name="OPTION_SEPARATE_INDEX" value="true"/>
+    <option name="OPTION_DOCUMENT_TAG_USE" value="false"/>
+    <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="false"/>
+    <option name="OPTION_DOCUMENT_TAG_VERSION" value="false"/>
+    <option name="OPTION_DOCUMENT_TAG_DEPRECATED" value="true"/>
+    <option name="OPTION_DEPRECATED_LIST" value="true"/>
+    <option name="OTHER_OPTIONS" value=""/>
+    <option name="HEAP_SIZE"/>
+    <option name="LOCALE"/>
+    <option name="OPEN_IN_BROWSER" value="true"/>
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DominozPizza.iml" filepath="$PROJECT_DIR$/DominozPizza.iml"/>
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" assert-keyword="true" jdk-15="true" project-jdk-type="JavaSDK" assert-jdk-15="true" project-jdk-name="1.8">
+    <output url="file://$PROJECT_DIR$/out"/>
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="mySupportsUserInfoFilter" value="true"/>
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs=""/>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <UIState>
+          <splitter-proportions>
+            <SplitterProportionsDataImpl/>
+          </splitter-proportions>
+          <settings/>
+        </UIState>
+      </state>
+      <state key="Copyright.UI">
+        <UIState>
+          <splitter-proportions>
+            <SplitterProportionsDataImpl/>
+          </splitter-proportions>
+        </UIState>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <UIState>
+          <splitter-proportions>
+            <SplitterProportionsDataImpl>
+              <option name="proportions">
+                <list>
+                  <option value="0.2"/>
+                </list>
+              </option>
+            </SplitterProportionsDataImpl>
+          </splitter-proportions>
+          <last-edited>1.6</last-edited>
+        </UIState>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <UIState>
+          <splitter-proportions>
+            <SplitterProportionsDataImpl/>
+          </splitter-proportions>
+          <settings/>
+        </UIState>
+      </state>
+    </states>
+  </component>
+  <component name="libraryTable">
+    <library name="scala-compiler-2.12.0-M5">
+      <CLASSES>
+        <root url="jar://C:/Users/kirankumarbs/gradle-2.8/caches/modules-2/files-2.1/org.scala-lang/scala-compiler/2.12.0-M5/b728be824eb4104e7e2a1e3fec2abda0c7668e18/scala-compiler-2.12.0-M5.jar!/"/>
+        <root url="jar://C:/Users/kirankumarbs/gradle-2.8/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.0-M5/c24c40a71ff615877e28867030bf3bcc49704990/scala-library-2.12.0-M5.jar!/"/>
+        <root url="jar://C:/Users/kirankumarbs/gradle-2.8/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.12.0-M5/188fde96b3f9debe04298925533f15d2e2813449/scala-reflect-2.12.0-M5.jar!/"/>
+        <root url="jar://C:/Users/kirankumarbs/gradle-2.8/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.12.0-M5/1.0.5/f0f85b4b3b9af2a61f6c9ab67c32ce6fa067f47f/scala-xml_2.12.0-M5-1.0.5.jar!/"/>
+        <root url="jar://C:/Users/kirankumarbs/gradle-2.8/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.12.0-M5/1.0.4/91d5da0f70e323cffa7c77463b6a49fa0bb43701/scala-parser-combinators_2.12.0-M5-1.0.4.jar!/"/>
+      </CLASSES>
+      <JAVADOC/>
+      <SOURCES/>
+    </library>
+  </component>
+</project>
